@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comforter Brush", cursive;
+  color: #ddd;
+}
+
+body {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 70px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, 20px);
+}
+
+.pixel {
+  background-color: #ddd;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  min-width: 20px;
+  border: solid 0px #555;
+  transition: all 0.2s;
+}
+
+.drawn {
+  background-color: red;
+}
