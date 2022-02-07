@@ -21,6 +21,10 @@ function removeAllChildNodes(parent) {
 
 function handleReset() {
   size = window.prompt("Ola Que Tal !", 16);
+  if (size > 128) {
+    alert("Too Big !");
+    return;
+  }
   createGrid(size);
 }
 
